@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Samkumar N | Portfolio</title>
-
+<link rel="stylesheet" src="style.css">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
@@ -175,6 +175,91 @@ footer{
     background:#020617;
     margin-top:40px;
     font-size:14px;
+}
+/* MOBILE RESPONSIVE */
+@media (max-width: 768px){
+
+    /* NAVBAR */
+    nav{
+        flex-direction: column;
+        padding: 15px;
+        text-align: center;
+    }
+
+    nav ul{
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    nav ul li{
+        margin: 10px 0;
+    }
+
+    /* HERO */
+    .hero{
+        height: auto;
+        padding: 60px 20px;
+    }
+
+    .hero h1{
+        font-size: 32px;
+        line-height: 1.2;
+    }
+
+    .hero span{
+        display:block;
+        font-size: 36px;
+    }
+
+    .hero p{
+        font-size: 14px;
+        padding: 0 10px;
+    }
+
+    /* SECTIONS */
+    .section{
+        padding: 50px 20px;
+    }
+
+    .section h2{
+        font-size: 22px;
+    }
+
+    /* ABOUT */
+    .about{
+        font-size: 14px;
+        padding: 0 10px;
+    }
+
+    /* SKILLS */
+    .skills{
+        gap: 10px;
+    }
+
+    .skill{
+        font-size: 13px;
+        padding: 8px 15px;
+    }
+
+    /* PROJECTS */
+    .projects{
+        grid-template-columns: 1fr;
+    }
+
+    .project{
+        padding: 20px;
+    }
+
+    /* CONTACT */
+    .contact p{
+        font-size: 14px;
+    }
+
+    /* FOOTER */
+    footer{
+        font-size: 12px;
+        padding: 15px;
+    }
 }
 </style>
 
