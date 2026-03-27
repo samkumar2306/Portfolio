@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Samkumar N | Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+    background:linear-gradient(120deg,#0f172a,#1e293b);
+    color:#fff;
+}
+
+/* NAVBAR */
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 60px;
+    position:sticky;
+    top:0;
+    background:rgba(255,255,255,0.05);
+    backdrop-filter:blur(10px);
+}
+
+nav h2{
+    font-weight:600;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:30px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:#fff;
+    font-size:14px;
+    transition:0.3s;
+}
+
+nav ul li a:hover{
+    color:#38bdf8;
+}
+
+/* HERO */
+.hero{
+    height:90vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    flex-direction:column;
+}
+
+.hero h1{
+    font-size:55px;
+}
+
+.hero span{
+    color:#38bdf8;
+}
+
+.hero p{
+    margin-top:15px;
+    color:#cbd5f5;
+}
+
+.btn{
+    margin-top:25px;
+    padding:12px 30px;
+    border:none;
+    border-radius:30px;
+    background:linear-gradient(45deg,#38bdf8,#6366f1);
+    color:#fff;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.btn:hover{
+    transform:scale(1.05);
+}
+
+/* SECTION */
+.section{
+    padding:80px 60px;
+}
+
+.section h2{
+    text-align:center;
+    margin-bottom:40px;
+    font-size:28px;
+}
+
+/* ABOUT */
+.about{
+    max-width:800px;
+    margin:auto;
+    text-align:center;
+    line-height:1.7;
+    color:#cbd5f5;
+}
+
+/* SKILLS */
+.skills{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:15px;
+}
+
+.skill{
+    padding:10px 20px;
+    background:rgba(255,255,255,0.08);
+    border-radius:20px;
+    transition:0.3s;
+}
+
+.skill:hover{
+    background:#38bdf8;
+    color:#000;
+}
+
+/* PROJECTS */
+.projects{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.project{
+    background:rgba(255,255,255,0.05);
+    padding:25px;
+    border-radius:15px;
+    transition:0.3s;
+}
+
+.project:hover{
+    transform:translateY(-10px);
+    background:rgba(255,255,255,0.1);
+}
+
+.project h3{
+    margin-bottom:10px;
+}
+
+/* CONTACT */
+.contact{
+    text-align:center;
+}
+
+.contact p{
+    margin:10px 0;
+    color:#cbd5f5;
+}
+
+/* FOOTER */
+footer{
+    text-align:center;
+    padding:20px;
+    background:#020617;
+    margin-top:40px;
+    font-size:14px;
+}
+</style>
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+    <h2>Samkumar N</h2>
+    <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+    <h1>Hi, I'm <span>Samkumar N</span></h1>
+    <p>AI & Data Science Student | Full Stack Development Enthusiast</p>
+    
+</section>
+
+<!-- ABOUT -->
+<section class="section" id="about">
+    <h2>About Me</h2>
+    <div class="about">
+        <p>
+            I am an AI & Data Science student with a strong interest in Web Development.
+            I enjoy building intelligent systems and solving real-world problems.
+        </p>
+        <p>
+            My goal is to develop my career in technology and become a full stack developer.
+            I am a quick learner and easily connect with people.
+        </p>
+    </div>
+</section>
+
+<!-- SKILLS -->
+<section class="section" id="skills">
+    <h2>Skills</h2>
+    <div class="skills">
+        <div class="skill">Java Basics</div>
+        <div class="skill">HTML</div>
+        <div class="skill">CSS</div>
+        
+        <div class="skill">Problem Solving</div>
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section class="section" id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+
+        <div class="project">
+            <h3>Railway Track Monitoring</h3>
+            <p>
+                Developed a system using sensors to detect faults in railway tracks
+                and improve safety.
+            </p>
+        </div>
+
+        <div class="project">
+            <h3>Coal Miner Safety System</h3>
+            <p>
+                IoT-based monitoring system to ensure miner safety by tracking
+                environmental conditions.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section contact" id="contact">
+    <h2>Contact</h2>
+    <p>Email: samkumar2306n@gmail.com</p>
+    <p>Phone: +91 9342182585</p>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    © 2026 Samkumar N | Built with HTML & CSS
+</footer>
+
+</body>
+</html>
